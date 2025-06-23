@@ -1,0 +1,38 @@
+.ability-title {
+  font-family: var(--font-primary), sans-serif;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  margin-bottom: 50px;
+}
+
+.ability-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.ability-list-item {
+  position: relative;
+  padding-left: 24px;
+  font-family: var(--font-primary), sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 145%;
+  color: var(--color-text-primary);
+}
+
+
+.ability-list-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 13px;
+  height: 13px;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+}

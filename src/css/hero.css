@@ -1,0 +1,157 @@
+.hero {
+  padding-bottom: 26px;
+}
+
+.text {
+  font-family: var(--font-primary), sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 125%;
+  color: var(--color-text-primary);
+  margin-bottom: 16px;
+  width: 222px;
+}
+
+.text-block {
+  margin-bottom: 32px;
+}
+
+.text-block p.text:nth-child(2) {
+  width: 93px;
+}
+
+.order {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.order-title {
+  font-family: var(--font-primary), sans-serif;
+  font-weight: 600;
+  font-size: 43px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  margin-bottom: 32px;
+}
+
+.order-button {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  display: block;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  background: var(--color-accent);
+  padding: 19px 113px;
+  border: none;
+  height: 58px;
+  background-image: linear-gradient(to right, transparent 50%, rgba(223, 61, 58, 100) 100%);
+  transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
+  width: 100%;
+}
+
+.headphones-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d1d1d;
+  /*margin-right: -60px;*/
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 50px;
+  }
+
+  .hero-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .text-block {
+    margin-bottom: 105px;
+  }
+
+  .order {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .order-title {
+    font-size: 42px;
+    max-width: 289px;
+    margin-bottom: 40px;
+  }
+
+  .headphones-wrapper {
+    margin-right: -60px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    padding-bottom: 85px;
+    position: relative;
+  }
+
+
+  .text-block {
+    margin-bottom: 94px;
+  }
+
+  .text-block p.text:nth-child(2) {
+    width: 110px;
+  }
+
+  .text {
+    font-family: var(--font-primary), sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 36px;
+    width: 360px;
+  }
+
+  .headphones-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .headphones {
+    max-width: 700px;
+  }
+
+
+  .order-title {
+    font-size: 74px;
+    width: auto;
+    margin-bottom: 86px;
+  }
+
+  .order-button {
+    font-size: 20px;
+    display: inline-block;
+    padding: 22px 166px;
+  }
+
+  .order-button:hover {
+    color: rgba(255, 255, 255, 1);
+    background-position: -100% 100%;
+    background-color: var(--color-hover);
+  }
+
+}
+
+@media screen and (max-width: 1439px) {
+
+  .container-inner {
+    padding-left: 0;
+  }
+}

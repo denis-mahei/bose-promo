@@ -1,0 +1,23 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+/* Common styles */
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+@import url('./animations.css');
+
+/* Sections style */
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./design.css');
+@import url('./ability.css');
+@import url('./burger-menu.css');
+@import url('./fonts.css');
+@import url('./footer.css');
+
+/* normalizer */
+@import url('@denis-mahei/custom-normalizer/src/custom-normalizer.css');

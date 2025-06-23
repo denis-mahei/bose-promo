@@ -1,0 +1,24 @@
+:root {
+  --font-primary: 'Gilroy', sans-serif;
+  --font-secondary: 'Roboto Condensed', sans-serif;
+  --font-tertiary: 'Roboto', sans-serif;
+
+  --color-text-primary: rgba(255, 255, 255, 0.8);
+  --color-text-secondary: #e7e7e7;
+  --color-accent: #df3d3a;
+  --color-hover: #b5302d;
+  --color-background: #191919;
+
+}
+
+body {
+  font-family: var(--font-primary), sans-serif;
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+  line-height: 1.45;
+  font-size: 16px;
+}
+
+.container-inner {
+  padding-left: 110px;
+}
