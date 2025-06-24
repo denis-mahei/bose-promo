@@ -67,6 +67,12 @@
     padding-bottom: 50px;
   }
 
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   .hero-wrapper {
     display: flex;
     justify-content: space-between;
@@ -83,7 +89,7 @@
 
   .order-title {
     font-size: 42px;
-    max-width: 289px;
+    width: 289px;
     margin-bottom: 40px;
   }
 
@@ -98,6 +104,10 @@
     position: relative;
   }
 
+  .hero-wrapper {
+    justify-content: flex-start;
+    align-items: start;
+  }
 
   .text-block {
     margin-bottom: 94px;
@@ -121,7 +131,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin-right: -80px;
   }
 
   .headphones {
@@ -137,8 +147,9 @@
 
   .order-button {
     font-size: 20px;
-    display: inline-block;
+    display: block;
     padding: 22px 166px;
+    max-width: 400px;
   }
 
   .order-button:hover {
