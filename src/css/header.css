@@ -15,7 +15,6 @@
 
 .burger {
   display: block;
-  z-index: 1001;
   background-color: transparent;
   border: none;
   padding: 1px;
