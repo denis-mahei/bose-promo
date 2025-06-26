@@ -49,8 +49,14 @@
   padding: 19px 113px;
   border: none;
   height: 58px;
-  background-image: linear-gradient(to right, transparent 50%, rgba(223, 61, 58, 100) 100%);
-  transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
+  background-image: linear-gradient(
+    to right,
+    transparent 50%,
+    rgba(223, 61, 58, 100) 100%
+  );
+  transition: background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.1s,
+  color 0.5s ease 0s,
+  background-color 0.5s ease;
   width: 100%;
 }
 
@@ -93,8 +99,29 @@
     margin-bottom: 40px;
   }
 
+  .order-button:hover {
+    color: rgba(255, 255, 255, 1);
+    background-position: -100% 100%;
+    background-color: var(--color-hover);
+  }
+
   .headphones-wrapper {
     margin-right: -60px;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.8s ease, opacity 0.8s ease;
+  }
+
+  .hero.loaded .headphones-wrapper {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .container-inner {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -142,7 +169,6 @@
     max-width: 700px;
   }
 
-
   .order-title {
     font-size: 74px;
     width: auto;
@@ -154,20 +180,5 @@
     display: block;
     padding: 22px 166px;
     max-width: 400px;
-  }
-
-  .order-button:hover {
-    color: rgba(255, 255, 255, 1);
-    background-position: -100% 100%;
-    background-color: var(--color-hover);
-  }
-
-}
-
-@media screen and (max-width: 1439px) {
-
-  .container-inner {
-    padding-left: 0;
-    padding-right: 0;
   }
 }

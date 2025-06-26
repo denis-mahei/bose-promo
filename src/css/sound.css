@@ -42,6 +42,7 @@
 
 @media screen and (min-width: 768px) {
   .sound-title {
+    font-size: 30px;
     text-align: right;
   }
 
@@ -56,6 +57,10 @@
 
   .sound-text-block {
     gap: 60px;
+  }
+
+  .sound-text-item {
+    width: 294px;
   }
 }
 
