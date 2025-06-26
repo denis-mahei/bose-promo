@@ -38,6 +38,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .ability {
+
+  }
+
   .ability-title {
     font-size: 30px;
   }
