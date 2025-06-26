@@ -54,3 +54,79 @@
   color: var(--color-text-primary);
   text-align: left;
 }
+
+.guarantee-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start; /* або start, якщо треба */
+  gap: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .guarantee-title {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .guarantee-wrapper {
+    flex-direction: row;
+    align-items: start;
+    gap: 0;
+  }
+
+  .guarantee-picture {
+    background-color: #1d1d1d;
+    order: -1; /* якщо в HTML картинка йде після списку, а на планшеті має бути зліва */
+    margin-left: -60px;
+    margin-right: 60px;
+  }
+
+  .warranty-list {
+    width: 100%; /* або обмеж ширину */
+    max-width: 300px;
+    gap: 55px;
+  }
+
+  .warranty-title {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .warranty-text {
+    font-size: 16px;
+    line-height: 1.45;
+    max-width: 294px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .guarantee-title {
+    font-size: 54px;
+    margin-bottom: 50px;
+  }
+
+  .warranty-list {
+    max-width: 405px;
+  }
+
+  .guarantee-wrapper {
+    align-items: center;
+  }
+
+  .guarantee-picture {
+    margin-left: -80px;
+    margin-right: 150px;
+  }
+
+  .warranty-text {
+    max-width: 294px;
+  }
+
+  .guarantee-wrapper {
+    position: relative;
+    background-image: url('/assets/img/icon/curve.svg');
+    background-repeat: no-repeat;
+    background-position: bottom 0 right -40px;
+    background-size: 301px auto;
+  }
+}
