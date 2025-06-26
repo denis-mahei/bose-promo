@@ -99,6 +99,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .container-inner {
+    padding-right: 0;
+  }
+
   .hero {
     padding-bottom: 85px;
     position: relative;

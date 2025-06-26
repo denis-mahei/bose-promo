@@ -9,6 +9,37 @@
   margin-bottom: 32px;
 }
 
+.sound-image {
+  margin-bottom: 32px;
+}
+
+.sound-text-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 42px;
+}
+
+.sound-text-item {
+  width: 280px;
+}
+
+.sound-text-title {
+  font-family: var(--font-primary), sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 125%;
+  color: var(--color-text-secondary);
+  margin-bottom: 16px;
+}
+
+.sound-paragraph {
+  font-family: var(--font-primary), sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 125%;
+  color: var(--color-text-primary);
+}
+
 @media screen and (min-width: 768px) {
   .sound-title {
     text-align: right;
@@ -21,5 +52,40 @@
 
   .sound-image {
     object-fit: cover;
+  }
+
+  .sound-text-block {
+    gap: 60px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .sound-image {
+    margin-bottom: 50px;
+  }
+
+  .sound-text-item {
+    width: 510px;
+  }
+
+  .sound .sound-text-block {
+    padding-left: 110px;
+    padding-right: 110px;
+    gap: 40px;
+  }
+
+  .sound-title {
+    font-size: 54px;
+    margin-bottom: 50px;
+  }
+
+  .sound-text-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .sound-paragraph {
+    font-size: 20px;
+    line-height: 145%;
   }
 }

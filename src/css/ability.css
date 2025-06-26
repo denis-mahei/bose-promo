@@ -49,6 +49,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .ability-inner {
+    padding-inline: 110px;
+  }
+
   .ability-title {
     font-size: 54px;
   }
