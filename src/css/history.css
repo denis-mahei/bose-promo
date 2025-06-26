@@ -1,0 +1,19 @@
+.history-title {
+  font-family: var(--font-primary), sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  max-width: 124px;
+}
+
+.title-wrapper {
+  width: 100%;
+  position: relative;
+  background-image: url('/assets/img/icon/curve.svg');
+  background-repeat: no-repeat;
+  background-position: bottom 0 right -40px;
+  background-size: 220px auto;
+}
