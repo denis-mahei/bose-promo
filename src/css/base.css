@@ -14,15 +14,21 @@ body {
   font-family: var(--font-primary), sans-serif;
   color: var(--color-text-primary);
   background-color: var(--color-background);
-  line-height: 1.45;
+  /*line-height: 1.45;*/
   font-size: 16px;
 }
 
 html {
   scroll-behavior: smooth;
+
 }
 
 .container-inner {
   padding-left: 110px;
   padding-right: 110px;
 }
+
+.hide {
+  display: none;
+}
+

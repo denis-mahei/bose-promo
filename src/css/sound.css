@@ -9,12 +9,19 @@
   margin-bottom: 32px;
 }
 
+.sound-picture {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .sound-image {
   margin-bottom: 32px;
 }
 
 .sound-text-block {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 42px;
 }
@@ -48,11 +55,8 @@
 
   .sound-picture {
     display: block;
-    margin-inline: -60px;
-  }
-
-  .sound-image {
-    object-fit: contain;
+    width: 768px;
+    margin-left: -60px;
   }
 
   .sound-text-block {
@@ -65,6 +69,11 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .sound-picture {
+    width: 1440px;
+    margin-left: -80px;
+  }
+
   .sound-image {
     margin-bottom: 50px;
   }
@@ -74,6 +83,7 @@
   }
 
   .sound .sound-text-block {
+    flex-wrap: nowrap;
     padding-left: 110px;
     padding-right: 110px;
     gap: 40px;

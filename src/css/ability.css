@@ -38,11 +38,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .ability {
-
-  }
-
   .ability-title {
+    text-align: left;
     font-size: 30px;
   }
 
@@ -58,6 +55,7 @@
   }
 
   .ability-title {
+    text-align: left;
     font-size: 54px;
   }
 
