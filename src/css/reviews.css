@@ -1,0 +1,19 @@
+.reviews-title {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+
+.bose-link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 125%;
+  color: var(--color-accent);
+}
+
+.reviews-text {
+
+}

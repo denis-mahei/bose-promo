@@ -77,13 +77,13 @@
 
   .guarantee-picture {
     background-color: #1d1d1d;
-    order: -1; /* якщо в HTML картинка йде після списку, а на планшеті має бути зліва */
+    order: -1;
     margin-left: -60px;
     margin-right: 60px;
   }
 
   .warranty-list {
-    width: 100%; /* або обмеж ширину */
+    width: 100%;
     max-width: 300px;
     gap: 55px;
   }
@@ -111,6 +111,7 @@
   }
 
   .guarantee-wrapper {
+    justify-content: start;
     align-items: center;
   }
 

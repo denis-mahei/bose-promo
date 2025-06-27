@@ -2,7 +2,7 @@
   font-family: var(--font-primary), sans-serif;
   font-weight: 600;
   font-size: 24px;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--color-text-secondary);
@@ -14,6 +14,150 @@
   position: relative;
   background-image: url('/assets/img/icon/curve.svg');
   background-repeat: no-repeat;
-  background-position: bottom 0 right -40px;
-  background-size: 220px auto;
+  background-position: bottom 0 right -105px;
+  background-size: 210px auto;
+  margin-bottom: 24px;
+}
+
+.history-description {
+  font-family: var(--font-primary), sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.25;
+  color: var(--color-text-primary);
+  margin-bottom: 32px;
+}
+
+.history-left .history-description {
+  margin-bottom: 32px;
+}
+
+.history-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.history-image-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .history-title {
+    margin-bottom: 32px;
+  }
+
+  .title-wrapper {
+    background-image: none;
+  }
+
+  .history-left .history-description {
+    font-size: 16px;
+    line-height: 1.45;
+    margin-bottom: 0;
+  }
+
+  .history-left .history-description:not(:last-child) {
+    margin-bottom: 85px;
+  }
+
+  .history-left,
+  .history-bottom-text {
+    width: 294px;
+  }
+
+  .history-right {
+    margin-right: -60px;
+  }
+
+  .history-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .history-image-text {
+    gap: 32px;
+  }
+
+  .history-founder {
+    min-width: 294px;
+  }
+
+  .history-figure {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 64px;
+    margin: 0;
+  }
+
+  .history-founder {
+    flex-shrink: 0;
+    width: 240px;
+    height: auto;
+  }
+
+  .history-caption {
+    font-family: var(--font-primary), sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.25;
+    position: relative;
+    max-width: 370px;
+    color: var(--color-text-primary);
+  }
+
+  .history-caption::before {
+    content: '';
+    display: block;
+    width: 34px;
+    height: 25px;
+    background-image: url('/assets/img/icon/blockquote.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -100px;
+    left: 0;
+  }
+
+  .history-quote {
+    font-family: var(--font-primary), sans-serif;
+    font-size: 16px;
+    line-height: 0.7;
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .history-title {
+    font-size: 54px;
+    width: 280px;
+  }
+
+  .history-right {
+    margin-right: -80px;
+  }
+
+  .history-left,
+  .history-bottom-text {
+    width: 410px;
+  }
+
+  .history-description {
+    font-size: 20px;
+    line-height: 1.45;
+  }
+
+  .history-founder {
+    margin-right: 260px;
+  }
+
+  .history-figure {
+    justify-content: start;
+    gap: 100px;
+  }
 }
