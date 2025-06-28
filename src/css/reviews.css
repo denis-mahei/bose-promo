@@ -30,6 +30,44 @@ iframe {
   color: var(--color-text-primary);
 }
 
+.reviews-pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 85px;
+}
+
+.pagination-btn {
+  background: none;
+  border: none;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-accent);
+  cursor: pointer;
+  padding: 12px 12px 0 12px;
+  position: relative;
+  opacity: 0.2;
+}
+
+.pagination-btn.is-active {
+  color: var(--color-accent);
+  opacity: 1;
+}
+
+.bose-link:hover {
+  opacity: 0.5;
+}
+
+.pagination-btn:not(:last-child)::after {
+  content: "-";
+  position: absolute;
+  right: -10px;
+  color: var(--color-accent);
+  user-select: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
 @media screen and (min-width: 768px) {
   .reviews-slider {
     flex-direction: row;
@@ -52,43 +90,6 @@ iframe {
     margin-right: 150px;
   }
 
-  .reviews-pagination {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 85px;
-  }
-
-  .pagination-btn {
-    background: none;
-    border: none;
-    font-weight: 600;
-    font-size: 18px;
-    color: var(--color-accent);
-    cursor: pointer;
-    padding: 12px 12px 0 12px;
-    position: relative;
-    opacity: 0.2;
-  }
-
-  .pagination-btn.is-active {
-    color: var(--color-accent);
-    opacity: 1;
-  }
-
-  .bose-link:hover {
-    opacity: 0.5;
-  }
-
-  .pagination-btn:not(:last-child)::after {
-    content: "-";
-    position: absolute;
-    right: -10px;
-    color: var(--color-accent);
-    user-select: none;
-    font-weight: 600;
-    font-size: 18px;
-  }
 
   .reviews-item {
     display: none;
