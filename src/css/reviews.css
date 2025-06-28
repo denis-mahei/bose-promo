@@ -56,7 +56,7 @@ iframe {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-top: 70px;
+    margin-top: 85px;
   }
 
   .pagination-btn {
@@ -66,8 +66,18 @@ iframe {
     font-size: 18px;
     color: var(--color-accent);
     cursor: pointer;
-    padding: 12px;
+    padding: 12px 12px 0 12px;
     position: relative;
+    opacity: 0.2;
+  }
+
+  .pagination-btn.is-active {
+    color: var(--color-accent);
+    opacity: 1;
+  }
+
+  .bose-link:hover {
+    opacity: 0.5;
   }
 
   .pagination-btn:not(:last-child)::after {
@@ -80,5 +90,11 @@ iframe {
     font-size: 18px;
   }
 
+  .reviews-item {
+    display: none;
+  }
 
+  .reviews-item.active {
+    display: block;
+  }
 }
