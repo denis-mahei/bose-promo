@@ -72,6 +72,14 @@ iframe {
   .reviews-slider {
     flex-direction: row;
   }
+
+  .reviews-item {
+    display: none;
+  }
+
+  .reviews-item.active {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -91,11 +99,4 @@ iframe {
   }
 
 
-  .reviews-item {
-    display: none;
-  }
-
-  .reviews-item.active {
-    display: block;
-  }
 }
