@@ -5,7 +5,6 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--color-text-secondary);
-
 }
 
 .bose-link {
@@ -59,7 +58,7 @@ iframe {
 }
 
 .pagination-btn:not(:last-child)::after {
-  content: "-";
+  content: '-';
   position: absolute;
   right: -10px;
   color: var(--color-accent);
@@ -80,6 +79,7 @@ iframe {
   .reviews-item.active {
     display: block;
   }
+
 }
 
 @media screen and (min-width: 1440px) {
@@ -97,6 +97,4 @@ iframe {
   .reviews-video-wrapper {
     margin-right: 150px;
   }
-
-
 }
