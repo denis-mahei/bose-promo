@@ -14,10 +14,6 @@
   color: var(--color-accent);
 }
 
-iframe {
-  margin-left: -60px;
-}
-
 .reviews-slider {
   display: flex;
 }
