@@ -52,7 +52,6 @@
 
 .order-character-list {
   border-top: 2px solid rgba(255, 255, 255, 0.1);
-  /*padding-top: 26px;*/
 }
 
 .order-list-item {
@@ -78,4 +77,19 @@
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.order-price-container {
+  margin-top: 32px;
+}
+
+.order-price {
+  font-family: var(--font-primary), sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 24px;
 }
