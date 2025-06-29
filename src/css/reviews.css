@@ -143,7 +143,6 @@
     margin-right: 150px;
   }
 
-  .reviews__inner,
   .reviews-item.active {
     display: flex;
     flex-direction: row;
