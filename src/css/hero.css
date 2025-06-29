@@ -20,13 +20,13 @@
   width: 93px;
 }
 
-.order {
+.hero-order {
   display: flex;
   flex-direction: column;
   margin-bottom: 32px;
 }
 
-.order-title {
+.hero-order-title {
   font-family: var(--font-primary), sans-serif;
   font-weight: 600;
   font-size: 43px;
@@ -37,7 +37,7 @@
   margin-bottom: 32px;
 }
 
-.order-button {
+.hero-order-button {
   font-family: inherit;
   font-weight: 600;
   font-size: 16px;
@@ -88,18 +88,18 @@
     margin-bottom: 105px;
   }
 
-  .order {
+  .hero-order {
     display: block;
     margin-bottom: 0;
   }
 
-  .order-title {
+  .hero-order-title {
     font-size: 42px;
     width: 289px;
     margin-bottom: 40px;
   }
 
-  .order-button:hover {
+  .hero-order-button:hover {
     color: rgba(255, 255, 255, 1);
     background-position: -100% 100%;
     background-color: var(--color-hover);
@@ -162,13 +162,13 @@
     max-width: 700px;
   }
 
-  .order-title {
+  .hero-order-title {
     font-size: 74px;
     width: auto;
     margin-bottom: 86px;
   }
 
-  .order-button {
+  .hero-order-button {
     font-size: 20px;
     display: block;
     padding: 22px 166px;

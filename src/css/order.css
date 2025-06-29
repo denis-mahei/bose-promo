@@ -1,0 +1,50 @@
+.order-title {
+  font-family: var(--font-primary), sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  margin-bottom: 32px;
+}
+
+.order-image {
+  background-color: #1d1d1d;
+  max-width: 100%;
+  margin-bottom: 32px;
+  transition: opacity 0.4s ease;
+  opacity: 1;
+}
+
+.order-image.fade-out {
+  opacity: 0;
+}
+
+.order-image.fade-in {
+  opacity: 1;
+}
+
+.color-option-container {
+  display: flex;
+  gap: 24px;
+}
+
+.color-option {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.color-option input[type="radio"] {
+  display: none;
+}
+
+.color-option input[type="radio"]:checked + .color-ring svg circle:last-of-type {
+  stroke: #df3d3a;
+  stroke-width: 2px;
+  fill: black;
+}
+
+.color-option.white input[type="radio"]:checked + .color-ring svg circle:last-of-type {
+  fill: white;
+}
