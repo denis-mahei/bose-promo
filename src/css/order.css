@@ -28,6 +28,7 @@
 .color-option-container {
   display: flex;
   gap: 24px;
+  margin-bottom: 32px;
 }
 
 .color-option {
@@ -47,4 +48,34 @@
 
 .color-option.white input[type="radio"]:checked + .color-ring svg circle:last-of-type {
   fill: white;
+}
+
+.order-character-list {
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  /*padding-top: 26px;*/
+}
+
+.order-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 25px 0 25px;
+}
+
+.order-list-item::after {
+  position: absolute;
+  content: '';
+  bottom: 2px;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.order-item-text {
+  font-family: var(--font-primary), sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.8);
 }
