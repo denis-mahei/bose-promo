@@ -22,12 +22,12 @@ const imageData = {
     mobile2x: blackMobile2x,
   },
   white: {
-    desktop: whiteMobile,
-    desktop2x: whiteMobile2x,
-    tablet: whiteDesktop,
-    tablet2x: whiteDesktop2x,
-    mobile: whiteTablet,
-    mobile2x: whiteTablet2x,
+    desktop: whiteDesktop,
+    desktop2x: whiteDesktop2x,
+    tablet: whiteTablet,
+    tablet2x: whiteTablet2x,
+    mobile: whiteMobile,
+    mobile2x: whiteMobile2x,
   },
 };
 const form = document.querySelector('.order-color-button');
