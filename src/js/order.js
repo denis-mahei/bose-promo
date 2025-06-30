@@ -36,7 +36,7 @@ form.addEventListener('change', e => {
       <img
         src="${basePath}${selectedColor}-mobile.webp"
         alt="Headphones Order"
-        class="order-image"
+        class="order-image fade-out"
       />
     `;
 
@@ -46,6 +46,10 @@ form.addEventListener('change', e => {
         const newImg = picture.querySelector('img');
         newImg.classList.remove('fade-out');
         newImg.classList.add('fade-in');
+
+        newImg.addEventListener('transitionend', () => {
+          newImg.classList.remove('fade-in');
+        });
       });
     }, 400);
   }
