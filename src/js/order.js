@@ -8,9 +8,15 @@ form.addEventListener('change', e => {
     const oldPicture = container.querySelector('picture');
 
     const oldImg = oldPicture.querySelector('img');
-    oldImg.classList.add('fade-out');
+
+    if (oldImg) {
+      oldImg.classList.add('fade-out');
+    }
     setTimeout(() => {
-      oldPicture.remove();
+      const existingPicture = container.querySelector('picture');
+      if (existingPicture) {
+        existingPicture.remove();
+      }
 
       const picture = document.createElement('picture');
 
