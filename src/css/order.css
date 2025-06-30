@@ -11,7 +11,6 @@
 
 .order-image-container {
   display: flex;
-  justify-content: center;
   max-width: 100%;
 }
 
@@ -28,6 +27,11 @@
 
 .order-image.fade-in {
   opacity: 1;
+}
+
+.color-ring-icon {
+  width: 44px;
+  height: 44px;
 }
 
 .color-option-container {
@@ -98,3 +102,83 @@
   color: var(--color-accent);
   margin-bottom: 24px;
 }
+
+@media screen and (min-width: 768px) {
+  .order-title {
+    font-size: 30px;
+  }
+
+  .order-price-container {
+    max-width: 294px;
+    margin-top: 52px;
+  }
+
+  .order-price-container .hero-order-button {
+    padding: 16px 114px;
+  }
+
+  .order-price {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
+
+  .color-ring-icon {
+    width: 58px;
+    height: 58px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .order-content .hero-order-button {
+    width: 400px;
+    min-height: 68px;
+  }
+
+  .color-option-container {
+    margin-bottom: 50px;
+  }
+
+  .order-image {
+    max-width: 700px;
+    margin-bottom: 0;
+    margin-right: -80px;
+  }
+
+  .order__inner {
+
+    padding-left: 190px;
+  }
+
+  .order-character-list {
+    max-width: 400px;
+  }
+
+  .order-title {
+    font-size: 54px;
+    margin-bottom: 50px;
+  }
+
+  .color-ring-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .order-price-container {
+    max-width: 400px;
+    margin-top: 60px;
+  }
+
+  .order-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .right-order-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
+

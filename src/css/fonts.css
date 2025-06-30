@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'Gilroy';
-  src: url('../assets/fonts/gilroy/Gilroy-Regular.woff2') format('woff2'),
-  url('../assets/fonts/gilroy/Gilroy-Regular.woff') format('woff');
+  src: url('../assets/fonts/gilroy/Gilroy-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -9,8 +8,7 @@
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('../assets/fonts/gilroy/Gilroy-Semibold.woff2') format('woff2'),
-  url('../assets/fonts/gilroy/Gilroy-Semibold.woff') format('woff');
+  src: url('../assets/fonts/gilroy/Gilroy-Semibold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -18,8 +16,7 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('../assets/fonts/roboto/Roboto-Regular.woff2') format('woff2'),
-  url('../assets/fonts/roboto/Roboto-Regular.woff') format('woff');
+  src: url('../assets/fonts/roboto/Roboto-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -27,8 +24,7 @@
 
 @font-face {
   font-family: 'Roboto Condensed';
-  src: url('../assets/fonts/roboto-condenced/RobotoCondensed-Regular.woff2') format('woff2'),
-  url('../assets/fonts/roboto-condenced/RobotoCondensed-Regular.woff') format('woff');
+  src: url('../assets/fonts/roboto-condenced/RobotoCondensed-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;

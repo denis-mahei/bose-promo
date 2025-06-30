@@ -57,9 +57,9 @@ form.addEventListener('change', e => {
         <source srcset="${image.mobile} 1x, ${image.mobile2x} 2x" media="(max-width: 480px)" />
         <img src="${image.mobile}" alt="Headphones Order" class="order-image fade-out" />
       `;
-      console.log(imageData[selectedColor]);
-      const title = container.querySelector('.order-title');
-      container.insertBefore(picture, title.nextSibling);
+      const leftSide = document.querySelector('.order-wrapper');
+      const rightOrder = leftSide.querySelector('.right-order-content');
+      leftSide.insertBefore(picture, rightOrder.previousSibling);
       requestAnimationFrame(() => {
         const newImg = picture.querySelector('img');
         newImg.classList.remove('fade-out');
