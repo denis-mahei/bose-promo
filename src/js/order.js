@@ -1,19 +1,33 @@
+import blackMobile from '/assets/img/order/black-mobile.webp';
+import blackMobile2x from '/assets/img/order/black-mobile@2x.webp';
+import blackDesktop from '/assets/img/order/black-desktop.webp';
+import blackDesktop2x from '/assets/img/order/black-desktop@2x.webp';
+import blackTablet from '/assets/img/order/black-tablet.webp';
+import blackTablet2x from '/assets/img/order/black-tablet@2x.webp';
+
+import whiteMobile from '/assets/img/order/white-mobile.webp';
+import whiteMobile2x from '/assets/img/order/white-mobile@2x.webp';
+import whiteDesktop from '/assets/img/order/white-desktop.webp';
+import whiteDesktop2x from '/assets/img/order/white-desktop@2x.webp';
+import whiteTablet from '/assets/img/order/white-tablet.webp';
+import whiteTablet2x from '/assets/img/order/white-tablet@2x.webp';
+
 const imageData = {
   black: {
-    desktop: '/assets/img/order/black-desktop.webp',
-    desktop2x: '/assets/img/order/black-desktop@2x.webp',
-    tablet: '/assets/img/order/black-tablet.webp',
-    tablet2x: '/assets/img/order/black-tablet@2x.webp',
-    mobile: '/assets/img/order/black-mobile.webp',
-    mobile2x: '/assets/img/order/black-mobile@2x.webp',
+    desktop: blackDesktop,
+    desktop2x: blackDesktop2x,
+    tablet: blackTablet,
+    tablet2x: blackTablet2x,
+    mobile: blackMobile,
+    mobile2x: blackMobile2x,
   },
   white: {
-    desktop: '/assets/img/order/white-desktop.webp',
-    desktop2x: '/assets/img/order/white-desktop@2x.webp',
-    tablet: '/assets/img/order/white-tablet.webp',
-    tablet2x: '/assets/img/order/white-tablet@2x.webp',
-    mobile: '/assets/img/order/white-mobile.webp',
-    mobile2x: '/assets/img/order/white-mobile@2x.webp',
+    desktop: whiteMobile,
+    desktop2x: whiteMobile2x,
+    tablet: whiteDesktop,
+    tablet2x: whiteDesktop2x,
+    mobile: whiteTablet,
+    mobile2x: whiteTablet2x,
   },
 };
 const form = document.querySelector('.order-color-button');
