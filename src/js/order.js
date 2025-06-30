@@ -16,7 +16,6 @@ const imageData = {
     mobile2x: '/assets/img/order/white-mobile@2x.webp',
   },
 };
-
 const form = document.querySelector('.order-color-button');
 const container = document.querySelector('.order-title').closest('.container');
 
@@ -37,14 +36,14 @@ form.addEventListener('change', e => {
       }
 
       const picture = document.createElement('picture');
-
+      console.log('inserting picture with paths:', image);
       picture.innerHTML = `
         <source srcset="${image.desktop} 1x, ${image.desktop2x} 2x" media="(min-width: 1440px)" />
         <source srcset="${image.tablet} 1x, ${image.tablet2x} 2x" media="(min-width: 768px)" />
         <source srcset="${image.mobile} 1x, ${image.mobile2x} 2x" media="(max-width: 480px)" />
         <img src="${image.mobile}" alt="Headphones Order" class="order-image fade-out" />
       `;
-
+      console.log(imageData[selectedColor]);
       const title = container.querySelector('.order-title');
       container.insertBefore(picture, title.nextSibling);
       requestAnimationFrame(() => {
