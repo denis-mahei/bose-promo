@@ -64,27 +64,31 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .footer-nav-link {
+  .footer-nav-link,
+  .contacts-tel {
     font-size: 16px;
     position: relative;
+  }
 
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -5px;
-      width: 0;
-      height: .1rem;
-      background-color: var(--color-accent);
-    }
+  .footer-nav-link::before,
+  .contacts-tel::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 0.1rem;
+    background-color: var(--color-accent);
+  }
 
-    &:hover:before {
-      width: 100%;
-    }
+  .footer-nav-link:hover:before,
+  .contacts-tel:hover:before {
+    width: 100%;
+  }
 
-    &::before {
-      transition: width 0.35s;
-    }
+  .contacts-tel::before,
+  .footer-nav-link::before {
+    transition: width 0.35s;
   }
 
   .footer__inner {
