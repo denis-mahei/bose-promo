@@ -40,6 +40,10 @@
   margin-bottom: 32px;
 }
 
+.order-icon svg {
+  stroke: var(--color-accent);
+}
+
 .color-option {
   display: inline-block;
   cursor: pointer;
