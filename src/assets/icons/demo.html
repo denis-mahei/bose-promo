@@ -10,6 +10,12 @@
 <body>
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="check" viewBox="0 0 38 32">
+<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636" d="M2.909 18.909l10.461 10.461c0.263 0.263 0.627 0.426 1.029 0.426 0.47 0 0.888-0.223 1.153-0.568l0.003-0.003 20.081-26.316"></path>
+</symbol>
+<symbol id="rect" viewBox="0 0 34 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M1.143 1.143h32v29.714h-32z"></path>
+</symbol>
 <symbol id="burger" viewBox="0 0 54 32">
 <path fill="#fff" style="fill: var(--color1, #fff)" opacity="0.8" d="M54.154 30.050h-54.154v-4.8h54.154v4.8zM54.154 18.053h-54.154v-4.8h54.154v4.8zM54.154 6.053h-54.154v-4.798h54.154v4.8z"></path>
 </symbol>
@@ -17,7 +23,7 @@
 <path fill="#fff" style="fill: var(--color1, #fff)" opacity="0.8" d="M24.124 7.152c0.241 0.241 0.39 0.575 0.39 0.943s-0.149 0.701-0.39 0.943l-6.6 6.6 6.6 6.6c0.241 0.241 0.39 0.575 0.39 0.943 0 0.737-0.597 1.334-1.334 1.334-0.368 0-0.702-0.149-0.943-0.391l-6.599-6.6-6.6 6.6c-0.24 0.232-0.566 0.374-0.926 0.374-0.736 0-1.333-0.597-1.333-1.333 0-0.36 0.143-0.687 0.375-0.927l6.6-6.6-6.6-6.6c-0.232-0.24-0.374-0.566-0.374-0.926 0-0.736 0.597-1.333 1.333-1.333 0.36 0 0.687 0.143 0.927 0.375l6.6 6.598 6.6-6.599c0.241-0.241 0.575-0.39 0.943-0.39s0.701 0.149 0.943 0.39v0z"></path>
 </symbol>
 <symbol id="arrow" viewBox="0 0 32 32">
-<path fill="none" stroke="#df3d3a" style="stroke: var(--color2, #df3d3a)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.9091" d="M1.455 30.545l29.091-29.091M30.545 1.455h-29.091M30.545 1.455v29.091"></path>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.9091" d="M1.455 30.545l29.091-29.091M30.545 1.455h-29.091M30.545 1.455v29.091"></path>
 </symbol>
 </defs>
 </svg>
@@ -29,6 +35,16 @@
 </header>
     <div class="clearfix mhl ptl">
         <h1 class="mvm mtn fgc1">Grid Size: 0</h1>
+        <div class="glyph fs1">
+            <div class="clearfix pbs">
+                <svg class="icon check"><use xlink:href="#check"></use></svg><span class="name"> check</span>
+            </div>
+        </div>
+        <div class="glyph fs1">
+            <div class="clearfix pbs">
+                <svg class="icon rect"><use xlink:href="#rect"></use></svg><span class="name"> rect</span>
+            </div>
+        </div>
         <div class="glyph fs1">
             <div class="clearfix pbs">
                 <svg class="icon burger"><use xlink:href="#burger"></use></svg><span class="name"> burger</span>

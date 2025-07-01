@@ -18,9 +18,216 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-text-secondary);
 }
 
 .feedback-content {
   margin-bottom: 40px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.feedback-input, textarea {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 10px 10px 16px;
+  color: var(--color-text-secondary);
+}
+
+textarea {
+  resize: none;
+  height: 112px;
+}
+
+.feedback-input::placeholder {
+  font-family: var(--font-primary), sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.icon-rect {
+  stroke: #dddddd;
+  fill: #1d1d1d;
+}
+
+.icon-container {
+  flex-shrink: 0;
+}
+
+.feedback-checkbox-container {
+  display: flex;
+
+}
+
+.feedback-checkbox {
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 24px;
+}
+
+.feedback-form input {
+  margin-bottom: 32px;
+}
+
+.feedback-form textarea {
+  margin-bottom: 40px;
+}
+
+.feedback-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.check-icon {
+  opacity: 0;
+  position: absolute;
+  top: -10px;
+  left: 5px;
+  stroke: var(--color-accent);
+  transition: opacity 0.3s ease;
+}
+
+.feedback-checkbox input[type="checkbox"]:checked + .icon-container .check-icon {
+  opacity: 1;
+}
+
+.check-link {
+  text-decoration: underline;
+}
+
+.access-text {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #e9edfa;
+}
+
+/*    <--   Button styles   *START*   -->    */
+
+.feedback-submit {
+  border: 0;
+  background-color: transparent;
+  font-family: var(--font-primary), sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 18px 140px;
+  margin-top: 90px;
+  box-shadow: inset 0 0 0 1px var(--color-accent);
+  position: relative;
+  vertical-align: middle;
+  transition: color 0.25s;
+}
+
+.feedback-submit::before,
+.feedback-submit::after {
+  box-sizing: inherit;
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 2px solid transparent;
+}
+
+.feedback-submit::before {
+  top: 0;
+  left: 0;
+}
+
+.feedback-submit::after {
+  bottom: 0;
+  right: 0;
+}
+
+.feedback-submit:hover {
+  color: var(--color-accent);
+}
+
+.feedback-submit:hover::before,
+.feedback-submit:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+.feedback-submit:hover::before {
+  border-top-color: var(--color-text-primary);
+  border-right-color: var(--color-text-primary);
+  transition: width 0.25s ease-out,
+  height 0.25s ease-out 0.25s;
+}
+
+.feedback-submit:hover::after {
+  border-bottom-color: var(--color-text-primary);
+  border-left-color: var(--color-text-primary);
+  transition: border-color 0s ease-out 0.5s,
+  width 0.25s ease-out 0.5s,
+  height 0.25s ease-out 0.75s;
+}
+
+.feedback-submit:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/*    <--   Button styles   *END*   -->    */
+@media screen and (min-width: 768px) {
+  .feedback-title {
+    font-weight: 600;
+  }
+
+  .feedback-text {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .feedback-submit {
+    max-width: 294px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .feedback-title {
+    font-size: 54px;
+    margin-bottom: 50px;
+  }
+
+  .feedback-content {
+    margin-right: 150px;
+  }
+
+  .feedback-text {
+    font-size: 28px;
+    max-width: 410px;
+  }
+
+  .feedback__inner {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-inline: 110px;
+  }
+
+  .feedback-form {
+    width: 510px;
+  }
+
+  .feedback-submit {
+    max-width: 100%;
+  }
+
+  .access-text {
+    font-size: 16px;
+    line-height: 1.6;
+  }
 }

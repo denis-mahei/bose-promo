@@ -15,6 +15,14 @@ Single-colored icons can be modified like so:
 }
 ========================================== */
 
+.check {
+  width: 1.181640625em;
+}
+
+.rect {
+  width: 1.0712890625em;
+}
+
 .burger {
   width: 1.6923828125em;
 }

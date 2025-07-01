@@ -12,10 +12,12 @@
 
 body {
   font-family: var(--font-primary), sans-serif;
+  font-style: normal;
   color: var(--color-text-primary);
   background-color: var(--color-background);
   font-size: 16px;
   font-weight: 400;
+
 }
 
 html {

@@ -1,15 +1,42 @@
 <section class="section feedback">
-  <div class="container feedback__inner">
-    <div class="feedback-content">
-      <h3 class="feedback-title">
-        feedback
-      </h3>
-      <p class="feedback-text">
-        We'll help you find the right headphones for you.
-      </p>
+  <div class="container">
+    <div class="feedback__inner">
+      <div class="feedback-content">
+        <h3 class="feedback-title">feedback</h3>
+        <p class="feedback-text">
+          We'll help you find the right headphones for you.
+        </p>
+      </div>
+      <form class="feedback-form">
+        <input class="feedback-input" name="username" type="text" placeholder="Your name" />
+        <input class="feedback-input" name="email" type="text" placeholder="Your e-mail" />
+        <textarea cols="30" rows="10" placeholder="Send us a message"></textarea>
+        <div class="feedback-checkbox-container">
+          <label for="user-privacy" class="feedback-checkbox"
+          ><input
+            type="checkbox"
+            id="user-privacy"
+            name="user-privacy"
+            value="true"
+          />
+            <span class="icon-container">
+            <svg width="30" height="27" class="icon-rect rect-bg">
+              <use href="/assets/icons/sprite.svg#rect"></use>
+            </svg>
+            <svg width="30" height="27" class="icon-rect check-icon">
+              <use href="/assets/icons/sprite.svg#check"></use>
+            </svg>
+          </span>
+            <span class="access-text"
+            >I agree to the
+            <a class="check-link" href="https://www.bose.com/legal/privacy-policy" target="_blank"
+            >privacy policy</a
+            ></span
+            ></label
+          >
+        </div>
+        <button class="feedback-submit" type="submit" disabled>send</button>
+      </form>
     </div>
-    <form class="feedback-form">
-      
-    </form>
   </div>
 </section>
