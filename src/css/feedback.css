@@ -1,0 +1,26 @@
+.section.feedback {
+  padding: 8px 0 36px;
+}
+
+.feedback-title {
+  font-family: var(--font-primary), sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  margin-bottom: 32px;
+}
+
+.feedback-text {
+  font-family: var(--font-primary), sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.feedback-content {
+  margin-bottom: 40px;
+}

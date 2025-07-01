@@ -103,6 +103,10 @@
   margin-bottom: 24px;
 }
 
+.section.order {
+  padding-bottom: 44px;
+}
+
 @media screen and (min-width: 768px) {
   .order-title {
     font-size: 30px;
@@ -125,6 +129,10 @@
   .color-ring-icon {
     width: 58px;
     height: 58px;
+  }
+
+  .section.order {
+    padding-bottom: 50px;
   }
 }
 
@@ -178,6 +186,10 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+  }
+
+  .section.order {
+    padding-bottom: 85px;
   }
 }
 

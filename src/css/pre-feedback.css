@@ -1,3 +1,22 @@
 .pre-section-image {
   margin: 0 auto;
 }
+
+.section.pre-feedback {
+  max-width: 480px;
+  padding: 44px 20px 8px;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .section.pre-feedback {
+    max-width: 100%;
+    padding: 50px 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section.pre-feedback {
+    padding: 85px 0 170px;
+  }
+}
