@@ -15,3 +15,12 @@ menuClose.addEventListener('click', () => {
   menuBtn.setAttribute('aria-expanded', 'false');
   enableBodyScroll(document.body);
 });
+
+const menuLinks = menu.querySelectorAll('a');
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('is-open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    enableBodyScroll(document.body);
+  });
+});
