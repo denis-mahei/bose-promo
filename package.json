@@ -20,6 +20,7 @@
   "dependencies": {
     "@denis-mahei/custom-normalizer": "^1.0.10",
     "accordion-js": "^3.4.1",
+    "sweetalert2": "^11.22.2",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }
