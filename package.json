@@ -10,17 +10,17 @@
   },
   "devDependencies": {
     "body-scroll-lock": "^4.0.0-beta.0",
-    "glob": "^11.0.0",
-    "postcss": "^8.4.41",
+    "glob": "^12.0.0",
+    "postcss": "^8.5.15",
     "postcss-sort-media-queries": "^5.2.0",
-    "vite": "^7.0.0"
+    "vite": "^7.3.5"
   },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "@denis-mahei/custom-normalizer": "^1.0.10",
     "accordion-js": "^3.4.1",
-    "sweetalert2": "^11.22.2",
+    "sweetalert2": "^11.22.4",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }
